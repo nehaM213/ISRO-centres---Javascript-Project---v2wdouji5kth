@@ -24,9 +24,9 @@ function show(data) {
     
     for (let centre of data) {
         row += `<tr> 
-        <td>CENTER <br>${centre.name} </td>
-        <td>CITY <br>${centre.Place}</td>
-        <td>STATE <br>${centre.State}</td>         
+        <td><span>CENTER</span>${centre.name} </td>
+        <td><span>CITY</span>${centre.Place}</td>
+        <td><span>STATE</span>${centre.State}</td>         
             </tr>`;
     }
     document.getElementById("list").innerHTML = row;
