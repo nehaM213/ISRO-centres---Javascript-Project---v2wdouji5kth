@@ -2,6 +2,8 @@
     text-align: center;
     width:60%;
     margin: auto;
+    letter-spacing: 1px;
+    font-weight:bold;
 }
 #logo{
     width: 15vh;
@@ -9,8 +11,8 @@
 .blue-text{
     color:blue;
 }
-.blue-bg,td,th{
-    background-color: rgb(20, 20, 122);
+.blue-bg{
+    background-color: rgb(14, 98, 183);
     color: white;
     border-radius: 10px;
     padding: 15px;
@@ -20,7 +22,23 @@
 }
 table{
     width: 100%;
-    margin: auto;
+    border-collapse: collapse;
+    border: none;
+}
+td{
+    padding: 15px;
+    text-align: left;
+    background-color: rgb(14, 98, 183);
+    color: white;
+}
+tr,td{
+    border-bottom: 1px solid white;
+}
+td:first-child {
+  border-radius: 20px 0 0 20px;
+}
+td:last-child {
+  border-radius: 0 20px 20px 0;
 }
 #search{
     padding: 15px;
@@ -30,5 +48,8 @@ table{
 }
 button{
     cursor: pointer;
+    border: none;
+    font-size:medium;
+    font-weight: bold;
 }
 

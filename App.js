@@ -20,17 +20,13 @@ async function showData(){
   
 function show(data) {
     let row = 
-        `<tr>
-        <th>CENTRE</th>
-        <th>CITY</th>
-        <th>STATE</th>
-       </tr>`;
+        ``;
     
     for (let centre of data) {
         row += `<tr> 
-        <td>${centre.name} </td>
-        <td>${centre.Place}</td>
-        <td>${centre.State}</td>         
+        <td>CENTER <br>${centre.name} </td>
+        <td>CITY <br>${centre.Place}</td>
+        <td>STATE <br>${centre.State}</td>         
             </tr>`;
     }
     document.getElementById("list").innerHTML = row;
