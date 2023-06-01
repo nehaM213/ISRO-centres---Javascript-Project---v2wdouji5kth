@@ -36,19 +36,19 @@ async function search(filter) {
   let data = await getapi(api_url);
   let searchValue = document.getElementById("search").value;
   let list = [];
-  if (filter == "city") {
+  if (filter == "city" && searchValue!="") {
     for (let centre of data.centres) {
       if (centre.Place.toUpperCase() == searchValue.toUpperCase()) {
         list.push(centre);
       }
     }
-  } else if (filter == "state") {
+  } else if (filter == "state" && searchValue != "") {
     for (let centre of data.centres) {
       if (centre.State.toUpperCase() == searchValue.toUpperCase()) {
         list.push(centre);
       }
     }
-  } else if (filter == "centre") {
+  } else if (filter == "centre" && searchValue != "") {
     for (let centre of data.centres) {
       if (centre.name.toUpperCase() == searchValue.toUpperCase()) {
         list.push(centre);
