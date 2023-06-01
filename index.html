@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Find ISRO Centres</title>
 </head>
+
 <body>
     <div class="main">
-        <img src="img/logo.svg" id="logo" alt="logo">
+        <img src="img/logo.svg" id="logo" alt="logo" />
         <h1>ISRO Centres</h1>
-        <h2><span class="blue-text">I</span>ndian <span class="blue-text">S</span>pace <span class="blue-text">R</span>esearch <span class="blue-text">O</span>rganization</h2>
-        <h3 class="blue-bg">Search for ISRO centres based on place, state and name</h3>
+        <h2>
+            <span class="blue-text">I</span>ndian
+            <span class="blue-text">S</span>pace
+            <span class="blue-text">R</span>esearch
+            <span class="blue-text">O</span>rganization
+        </h2>
+        <h3 class="blue-bg">
+            Search for ISRO centres based on place, state and name
+        </h3>
         <div class="button-section">
-            <input type="search" placeholder="Type here......." id="search" onkeyup="search('')" onclick="search('')">
-            <!--  -->
+            <input type="search" placeholder="Type here......." id="search" onkeyup="search('')" />
             <button class="blue-bg" onclick="search('city')">CITY</button>
             <button class="blue-bg" onclick="search('state')">STATE</button>
             <button class="blue-bg" onclick="search('centre')">CENTRE</button>
         </div>
-        <div class="d-flex justify-content-center">
-            <div class="spinner-border" 
-                 role="status" id="loading">
-                <span class="sr-only">Loading...</span>
-            </div>
+        <div id="loading">
+            <span>Loading...</span>
         </div>
         <table id="list"></table>
     </div>
     <script src="App.js"></script>
 </body>
+
 </html>

@@ -1,51 +1,51 @@
-.main{
-    text-align: center;
-    width:60%;
-    margin: auto;
-    letter-spacing: 1px;
-    font-family: Arial, Helvetica, sans-serif;
-    /* font-weight:bold; */
+.main {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#logo{
-    width: 15vh;
+#logo {
+  width: 15vh;
 }
-h1{
-    font-size: 40px;
+h1 {
+  font-size: 40px;
 }
-h2{
-    font-size: 27px;
+h2 {
+  font-size: 27px;
 }
-.blue-text{
-    color:rgb(14, 98, 183);
+.blue-text {
+  color: rgb(14, 98, 183);
 }
-.blue-bg{
-    background-color: rgb(14, 98, 183);
-    color: white;
-    border-radius: 10px;
-    padding: 15px;
+.blue-bg {
+  background-color: rgb(14, 98, 183);
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
 }
-.button-section{
-    margin: 10px;
+.button-section {
+  margin: 10px;
 }
-table{
-    width: 100%;
-    border-collapse: collapse;
-    border: none;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
 }
-td{
-    padding: 10px;
-    text-align: left;
-    background-color: rgb(14, 98, 183);
-    color: white;
-    line-height: 25px;
-    font-size: large;
+td {
+  padding: 10px;
+  text-align: left;
+  background-color: rgb(14, 98, 183);
+  color: white;
+  line-height: 25px;
+  font-size: large;
 }
-td span{
-    display: block;
-    font-weight: bolder;
+td span {
+  display: block;
+  font-weight: bolder;
 }
-tr,td{
-    border-bottom: 1px solid white;
+tr,
+td {
+  border-bottom: 1px solid white;
 }
 td:first-child {
   border-radius: 20px 0 0 20px;
@@ -53,16 +53,15 @@ td:first-child {
 td:last-child {
   border-radius: 0 20px 20px 0;
 }
-#search{
-    padding: 15px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgb(216, 213, 213);
+#search {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(216, 213, 213);
 }
-button{
-    cursor: pointer;
-    border: none;
-    font-size:medium;
-    font-weight: bold;
+button {
+  cursor: pointer;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
 }
-
