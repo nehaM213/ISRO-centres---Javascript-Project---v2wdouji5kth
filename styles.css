@@ -2,7 +2,7 @@
   text-align: center;
   width: 60%;
   margin: auto;
-  letter-spacing: 1px;
+  letter-spacing: 1%;
   font-family: Arial, Helvetica, sans-serif;
 }
 #logo {
@@ -25,6 +25,7 @@ h2 {
 }
 .button-section {
   margin: 10px;
+  width: 100%;
 }
 table {
   width: 100%;
@@ -65,9 +66,22 @@ button {
   font-size: medium;
   font-weight: bold;
 }
-button:hover{
+button:hover {
   background-color: rgb(51, 135, 219);
 }
-table tr:hover td{
+table tr:hover td {
   background-color: rgb(30, 65, 101);
+}
+
+@media only screen and (min-width: 600px) and (max-width: 920px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* For mobile phones: */
+  .main {
+    width: fit-content;
+  }
 }

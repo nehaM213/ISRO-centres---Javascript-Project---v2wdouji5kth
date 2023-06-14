@@ -23,13 +23,16 @@
             Search for ISRO centres based on place, state and name
         </h3>
         <div class="button-section">
-            <input type="search" placeholder="Type here......." id="search" onkeyup="search('')" />
-            <button class="blue-bg" onclick="search('city')">CITY</button>
-            <button class="blue-bg" onclick="search('state')">STATE</button>
-            <button class="blue-bg" onclick="search('centre')">CENTRE</button>
+            <input type="text" placeholder="Type here......." id="search" onkeyup="search('')"/>
+            <button class="blue-bg" onclick="sort('city')">CITY &#x21c5;</a></button>
+            <button class="blue-bg" onclick="sort('state')">STATE &#x21c5;</button>
+            <button class="blue-bg" onclick="sort('centre')">CENTRE &#x21c5;</button>
         </div>
         <div id="loading">
             <span>Loading...</span>
+        </div>
+        <div id="error">
+            <span></span>
         </div>
         <table id="list"></table>
     </div>
